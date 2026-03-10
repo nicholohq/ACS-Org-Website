@@ -1,81 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
 
-    <title>ACS News</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ACS | Home</title>
 </head>
+
 <body>
-    
-    <div class="nav_bar">
-        
-    
-        <img class="acs_logo" src="image/logo.png" alt="ACS News Logo">
-        <ul class="nav_items" >
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-           
+
+    <nav class="nav_bar">
+        <div
+            style="position: absolute; top: -20px; left: 20px; font-size: 0.5rem; color: var(--primary); font-family: 'Press Start 2P';">
+            SYSTEM ONLINE</div>
+        <a href="index.html"><img class="acs_logo" src="image/logo.png" alt="ACS Logo"></a>
+        <ul class="nav_items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
         </ul>
         <div class="search">
-            <input type="text" placeholder="SEARCH">
-            <a href="">
-                <img src="image/magnifying-glass.png" alt="srch">
-            </a>
+            <img src="image/magnifying-glass.png" alt="search">
+            <input type="text" placeholder="Search...">
         </div>
-    </div>
+    </nav>
 
-    <p id="latest">LATEST NEWS </p>
-    <div class="head_lines">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-       <img src="image/news1.jpg" alt="latest news" height="350px" id="news">
-       <div class="text">
-       <li> We are thrilled to announce the winners of our highly-anticipated ORG shirt and HOODIE CONTEST! After careful consideration and with great excitement, the following talented designers have been selected:
-        <p>ORG SHIRT DESIGN: <br> <bold>ENTRY</bold><br> <br>#1 Erroll Jayke P. Montalvo from BSCS2-Block 2 </mark><br>
-           HOODIE DESIGN : ENTRY #10 Christian M. Ala from BSCS2-Block 1</mark>
-            </p>
-            <br>
-            <p>
-             would like to express our sincere congratulations to these talented individuals whose designs stood out for their originality, artistic expression, and reflection of our organization's values and mission. 
-            A special thank you to all participants for their remarkable submissions. Your dedication and artistic contributions have made this contest a truly inspiring event, and we appreciate your involvement. 
-            The winning designs will now move forward to production, and we can't wait to see them in action.
-            </p>
-            <br>
-            <p><small>Stay tuned for more NEWS and UPDATES.</small></p>
-        </li>
+    <section class="hero">
+        <div class="alien-float"
+            style="font-size: 3rem; margin-bottom: 2rem; filter: drop-shadow(0 0 10px var(--primary));">👾</div>
+        <h1>Welcome to ACS</h1>
+        <p>Short introduction about the Association of Computer Students. We empower future tech leaders through
+            innovation, community, and excellence.</p>
+        <div class="cta-btns">
+            <a href="about.html" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
 
-        <p id="lastnews">OCT 5 NEWS</p>
-        <div class="oldnews">
-            <img src="image/news2.jpg" alt="2nd runner up" id="new" height="350px">
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <div class="text2">
-                
-                    <p>𝑪𝑶𝑵𝑮𝑹𝑨𝑻𝑼𝑳𝑨𝑻𝑰𝑶𝑵𝑺 𝑬𝑽𝑬𝑹𝒀𝑶𝑵𝑬! </p>
+    <section id="highlights">
+        <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Org Highlights</h2>
+        <div class="news-container">
+            <!-- Latest News -->
+            <div class="news-item">
+                <div class="news-content">
+                    <span style="color: var(--primary); font-weight: 600;">LATEST NEWS</span>
+                    <h3 style="font-size: 2rem; margin: 1rem 0;">Winner Announcement: Shirt & Hoodie Contest</h3>
+                    <p>We are thrilled to announce the winners of our highly-anticipated ORG shirt and HOODIE CONTEST!
+                        After careful consideration, talented designers from our community have been selected.</p>
                     <br>
-                    <br>
-                <p>Again, we want to express our gratitude to everyone who participated in the event since without them, it would not have been a success. 
-                    In particular, we want to thank our 𝘼𝘾𝙎 𝙊𝙛𝙛𝙞𝙘𝙚𝙧𝙨 and 𝙀𝙫𝙚𝙣𝙩𝙨 𝘾𝙤𝙢𝙢𝙞𝙩𝙩𝙚𝙚 for their tremendous efforts to ensure the security and safety of the event.
-                    <br>
-                    <br>
-                    Again, thank you to each and every one of you for your wonderful participation in Science Month. Your enthusiasm for science is very admirable, and we look forward to seeing what you will do in the field in the future.
-                    </p>
-
+                    <p><strong>ORG SHIRT:</strong> Erroll Jayke P. Montalvo (BSCS2-2)</p>
+                    <p><strong>HOODIE:</strong> Christian M. Ala (BSCS2-1)</p>
+                </div>
+                <img src="image/news1.jpg" alt="latest news">
             </div>
 
-
+            <!-- Old News -->
+            <div class="news-item" style="flex-direction: row-reverse;">
+                <div class="news-content">
+                    <span style="color: var(--text-muted); font-weight: 600;">OCT 5 NEWS</span>
+                    <h3 style="font-size: 1.5rem; margin: 1rem 0;">Science Month Celebration</h3>
+                    <p>Congratulations to everyone who participated in Science Month! We want to express our gratitude
+                        to our ACS Officers and Events Committee for ensuring a successful and safe event.</p>
+                </div>
+                <img src="image/news2.jpg" alt="science month">
+            </div>
         </div>
+    </section>
 
-       </div>
-    </div>
+    <footer>
+        <p>&copy; 2024 Association of Computer Students. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
